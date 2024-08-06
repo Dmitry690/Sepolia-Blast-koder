@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: MIT
+// Generated with Spectral Syntax
+
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract CryptoBuild is ERC20 {
+    constructor() ERC20("CryptoBuild", "CCC") {
+        _mint(msg.sender, 1_000_000 * (10**decimals()));
+    }
+}
